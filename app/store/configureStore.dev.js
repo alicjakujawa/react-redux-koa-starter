@@ -1,8 +1,7 @@
-import { combineReducers, createStore, compose } from 'redux';
+import { createStore, compose } from 'redux';
 import DevTools from '../containers/DevTools';
-import * as reducers from '../reducers';
+import reducer from '../reducers';
 
-const reducer = combineReducers(reducers);
 const enhancer = compose(
   DevTools.instrument()
 );

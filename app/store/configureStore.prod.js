@@ -1,7 +1,6 @@
-import { combineReducers, createStore, compose } from 'redux';
-import * as reducers from '../reducers';
+import { createStore, compose } from 'redux';
+import reducer from '../reducers';
 
-const reducer = combineReducers(reducers);
 const enhancer = compose(
 
 );
