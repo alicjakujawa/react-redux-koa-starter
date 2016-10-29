@@ -13,6 +13,10 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loaders: ['babel']
+    },
+    {
+      test: /\.(sass|scss)?$/,
+      loaders: ['style','css','sass']
     }]
   },
   resolve: {
