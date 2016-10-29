@@ -8,7 +8,8 @@ export default class App extends Component {
     return (
       <Provider store={store}>
         <div>
-          {__DEV__ && <DevTools />}
+          <p>Waiting for super cool content!</p>
+          {process.env.NODE_ENV !== 'production' && <DevTools />}
         </div>
       </Provider>
     );

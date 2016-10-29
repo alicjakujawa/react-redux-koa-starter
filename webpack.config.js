@@ -34,9 +34,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'React redux starter'
-    }),
-    new webpack.DefinePlugin({
-      __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
     })
   ]
 };
